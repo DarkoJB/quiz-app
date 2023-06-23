@@ -37,7 +37,7 @@ const Questions = () => {
   const [options, setOptions] = useState([]);
 
   useEffect(()=>{
-    if(response?.results.length){
+    if(response && response.results && response.results.length){
       const question = response.results[questionIndex];
       let answers = [...question.incorrect_answers];
       answers.splice(
