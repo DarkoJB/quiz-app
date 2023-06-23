@@ -10,7 +10,7 @@ import {
 
 const SelectField = (props) => {
     const { label, options } = props;
-    const dispatch = useDispatch;
+    const dispatch = useDispatch();
     const [value, setValue] = useState('');
     const handleChange = (e) => {
       setValue(e.target.value);
